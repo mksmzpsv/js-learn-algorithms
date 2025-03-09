@@ -1,7 +1,8 @@
+import { describe, expect, test } from 'vitest';
 import binarySearch from './binarySearch';
 
 describe('binarySearch', () => {
-  it('search number in sorted array', () => {
+  test('search number in sorted array', () => {
     const arrayOddLen = [0, 1, 2, 5, 8, 10, 11, 15, 16];
     const arrayEvenLen = [2, 3, 4, 5, 8, 10, 11, 15];
 

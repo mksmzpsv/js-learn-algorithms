@@ -1,7 +1,8 @@
+import { describe, expect, test } from 'vitest';
 import selectionSort from './selectionSort';
 
 describe('selectionSort', () => {
-  it('sorting numbers array with selection sort', () => {
+  test('sorting numbers array with selection sort', () => {
     const sortedArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
     const notSortedArray = [8, 10, 5, 2, 11, 6, 14, 13, 15, 9, 7, 3, 1, 12, 4];
     const reverseSortedArray = [15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1];

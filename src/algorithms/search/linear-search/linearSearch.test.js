@@ -1,7 +1,8 @@
+import { describe, expect, test } from 'vitest';
 import linearSearch from './linearSearch';
 
 describe('linearSearch', () => {
-  it('search number in array', () => {
+  test('search number in array', () => {
     const array = [9, 4, 19, 4, 12, 1, 7, 9];
 
     expect(linearSearch(array, 1)).toEqual([5]);
@@ -12,7 +13,7 @@ describe('linearSearch', () => {
     expect(linearSearch([], 2)).toEqual([]);
   });
 
-  it('search string in array', () => {
+  test('search string in array', () => {
     const array = ['ac', 'bb', 'da', 'cb', 'bb', 'ab', 'ad', 'ac'];
 
     expect(linearSearch(array, 'aa')).toEqual([]);
